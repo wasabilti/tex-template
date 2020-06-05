@@ -1,0 +1,2 @@
+#
+my latex template file
