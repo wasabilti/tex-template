@@ -6,5 +6,9 @@
 
 FILENAME=analyse_report
 
-xelatex $FILENAME.tex
-open $FILENAME.pdf
+if [ -f $FILENAME.tex ]; then
+	xelatex $FILENAME.tex
+	open $FILENAME.pdf
+else
+	echo -e 'File '$FILENAME 'does not exist! \nPlease check whether file exist or change FILENAME var to fit your .tex file' >&2
+fi
