@@ -12,3 +12,23 @@
 \usepackage{ctex}
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage{graphicx}
+\usepackage{cite}
+
+\title{title}
+\author{author}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{}
+\chapter{}
+\chapter{}
+
+\addcontentsline{toc}{chapter}{参考文献}
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{ref}
+\end{document}
