@@ -9,7 +9,7 @@ set INCLUDE_BIBTEX;
 
 if [ -f $FILENAME.tex ]; then
 	xelatex $FILENAME.tex
-	if [ INCLUDE_BIBTEX ]; then
+	if [ $INCLUDE_BIBTEX ]; then
 		bibtex $FILENAME.aux
 		xelatex $FILENAME.tex
 		xelatex $FILENAME.tex
